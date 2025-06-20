@@ -1,0 +1,38 @@
+/* Define color palette and fonts */
+:root {
+  --navy-50: #f0f4fa;
+  --navy-100: #e0e9f5;
+  --navy-200: #c4d6ec;
+  --navy-400: #72a2d3;
+  --navy-500: #5587c3;
+  --navy-600: #4470b1;
+  --navy-700: #3a5d9a;
+  --navy-800: #344e7e;
+  --navy-900: #2f4565;
+
+  --blue-100: #dbeafe;
+  --blue-600: #2563eb;
+  --blue-700: #1d4ed8;
+
+  --red-500: #ef4444;
+  --yellow-500: #eab308;
+  --green-500: #22c55e;
+  
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  
+  --white: #ffffff;
+  --black-t-50: rgba(0, 0, 0, 0.5);
+}
+
+/* Basic resets and body styles */
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--navy-50);
+  color: var(--navy-900);
+}
