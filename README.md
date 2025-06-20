@@ -8,8 +8,8 @@ This project was built from the ground up using **React and plain CSS, with zero
 
 *(Replace the link above with your actual deployment link from Vercel, Netlify, etc.)*
 
-![Task Board Screenshot](./screenshot.png)
-*(Suggestion: Take a screenshot of your running application, save it as `screenshot.png` in the project root, and this image will appear here.)*
+![Task Board Screenshot](![image](https://github.com/user-attachments/assets/4642c0fc-ddeb-4db0-93e1-8a4f55e9b821))
+
 
 ---
 
