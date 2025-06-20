@@ -4,11 +4,7 @@ This is a comprehensive task management application built as a submission for th
 
 This project was built from the ground up using **React and plain CSS, with zero external runtime dependencies**, to demonstrate core web development fundamentals and a mastery of browser-native APIs.
 
-### [➡️ Live Demo ⬅️](https://your-deployment-link.vercel.app/)
-
-*(Replace the link above with your actual deployment link from Vercel, Netlify, etc.)*
-
-![Task Board Screenshot](![image](https://github.com/user-attachments/assets/4642c0fc-ddeb-4db0-93e1-8a4f55e9b821))
+![Task Board Screenshot](![image](https://github.com/user-attachments/assets/4642c0fc-ddeb-4db0-93e1-8a4f55e9b821)).
 
 
 ---
@@ -24,7 +20,7 @@ This application meets all the core functional requirements of the task:
     -   Add, edit, and delete tasks within projects.
     -   Each task includes a title, description, priority level (High, Medium, Low), status, and an assignee name.
     -   Tasks can have an optional due date.
--   **Interactive Kanban Board**:
+-   **Interactive Board**:
     -   A visual three-column layout: **To Do**, **In Progress**, and **Done**.
     -   **Drag-and-Drop functionality** to seamlessly move tasks between columns and update their status.
 -   **Live Search**:
@@ -46,7 +42,7 @@ This project was built with a focus on simplicity, performance, and robustness, 
 -   **Plain CSS with CSS Variables**: Instead of a utility-first framework like Tailwind, plain CSS was chosen to eliminate build tool complexities and demonstrate strong foundational CSS skills. A consistent design system was implemented using CSS variables (`:root`) for colors, fonts, and spacing.
 -   **HTML5 Drag and Drop API**: To fulfill the drag-and-drop requirement without external libraries, the native browser API (`draggable`, `onDragStart`, `onDrop`, etc.) was implemented. This choice results in a more lightweight and performant application.
 -   **[Vite](https://vitejs.dev/)**: Used as the lightning-fast build tool and development server.
--   **No Runtime Dependencies**: Beyond React, this project intentionally uses no external libraries for its core functionality (no `uuid`, no `react-beautiful-dnd`, etc.) to keep the bundle size minimal and reduce potential points of failure.
+-   **No Runtime Dependencies**: Beyond React, this project intentionally uses no external libraries for its core functionality to keep the bundle size minimal and reduce potential points of failure.
 
 ---
 
@@ -88,13 +84,11 @@ The application will now be running and accessible at `http://localhost:5173`.
 
 ## 🤖 AI Tool Utilization
 
-AI tools (specifically ChatGPT) were used effectively throughout this project as a development partner, in line with the task's encouragement of AI assistance. The primary uses were:
+AI tools (specifically ChatGPT, Google AI Studio) were used effectively throughout this project as a development partner, in line with the task's encouragement of AI assistance. The primary uses were:
 
 -   **Boilerplate Generation**: Quickly scaffolding initial component structures, forms, and modals, which were then customized.
 -   **Problem Solving & Debugging**:
-    -   Diagnosing and resolving complex build tool configuration issues (e.g., the `postcss` and `vite.config.js` error loops).
-    -   Identifying JavaScript runtime errors, such as the `Cannot read properties of undefined (reading 'trim')` crash, and suggesting robust solutions.
--   **Refactoring**: Assisting in the refactoring process from a library-based approach (like `react-beautiful-dnd`) to a native API-based solution (HTML5 Drag and Drop).
+    -   Diagnosing and resolving complex build tool configuration issues.
+    -   Identifying JavaScript runtime errors and suggesting robust solutions.
 -   **CSS & SVG Generation**: Generating a clean CSS structure based on the desired layout and creating simple, inline SVG components for icons to avoid an external icon library.
--   **Documentation**: Helping to structure and write this `README.md` file in a clear and professional manner.
--   
+  
