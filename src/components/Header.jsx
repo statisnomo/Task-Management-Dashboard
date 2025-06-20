@@ -6,9 +6,9 @@ import { useAppContext } from '../contexts/AppContext';
 
 const Header = () => {
   const [isTaskModalOpen, setIsTaskModalOpen] = useState(false);
-  
-  // Get searchTerm and setSearchTerm from the context
-  const { activeProjectId, projects, searchTerm, setSearchTerm } = useAppContext(); // <-- UPDATED
+
+  // Get all necessary values from the context, including for the search bar
+  const { activeProjectId, projects, searchTerm, setSearchTerm } = useAppContext();
   
   const activeProject = projects.find(p => p.id === activeProjectId);
 
@@ -23,20 +23,33 @@ const Header = () => {
             {activeProject ? activeProject.description : "Select a project"}
           </p>
         </div>
+
         <div className="header__actions">
+
           <div className="header__search-wrapper">
             <span className="header__search-icon"><SearchIcon /></span>
             <input
               type="text"
               placeholder="Search tasks..."
               className="header__search-input"
-              value={searchTerm} // <-- Control the input with state
-              onChange={(e) => setSearchTerm(e.target.value)} // <-- Update state on change
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
             />
           </div>
-          {/* ... New Task Button ... */}
+
+          <button
+            onClick={() => setIsTaskModalOpen(true)}
+            disabled={!activeProjectId}
+            className="button button-primary"
+            style={{display: 'flex', alignItems: 'center', gap: '8px'}}
+          >
+            <PlusIcon />
+            New Task
+          </button>
+
         </div>
       </header>
+
       <Modal isOpen={isTaskModalOpen} onClose={() => setIsTaskModalOpen(false)}>
         <TaskForm onClose={() => setIsTaskModalOpen(false)} />
       </Modal>
