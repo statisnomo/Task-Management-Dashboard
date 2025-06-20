@@ -4,7 +4,11 @@ This is a comprehensive task management application built as a submission for th
 
 This project was built from the ground up using **React and plain CSS, with zero external runtime dependencies**, to demonstrate core web development fundamentals and a mastery of browser-native APIs.
 
-![Task Board Screenshot]
+![Task Board Screenshot](https://github.com/user-attachments/assets/49c13b2b-797a-4cab-893f-672947a4e79c)
+
+Demo Video Link :- 
+https://github.com/user-attachments/assets/8ca169ae-2fe6-44c0-9774-3d89253a9dea
+
 ---
 
 ## ✅ Core Features
